@@ -16,10 +16,15 @@ cabal-version:       >=1.10
 executable testing-exe
   hs-source-dirs:      .
   main-is:             Main.hs
-  ghc-options:         -O2 
-  -- -threaded -rtsopts -with-rtsopts=-N
+  ghc-options:         -O2 -threaded -rtsopts -with-rtsopts=-N4
   build-depends:       base
+                     , array
                      , regex-tdfa
+                     , parallel
+                     , regex-tdfa-text
+                     , regex-pcre
+                     , text-icu
+                     , text
                      , bytestring
                      , thyme
                      , vector-space
