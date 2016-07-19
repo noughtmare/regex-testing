@@ -3,7 +3,8 @@ Testing various regex packages
 
 Currently testing Data.Text.reverse and parallelized Text.Regex.TDFA.Text
 
-Results (with `-O2 -threaded -rtsopts --with-rtsopts=-N4`):
+Results (with `-O2 -threaded -rtsopts --with-rtsopts=-N4` on a Intel® Core™ i3-4100M Processor
+(3M Cache, 2.50 GHz)):
 ```
 benchmarking reverse/1
 time                 793.5 ns   (754.7 ns .. 838.2 ns)
